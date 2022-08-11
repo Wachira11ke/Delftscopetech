@@ -1,0 +1,21 @@
+<?php
+
+$file = $_GET["file"] .".pdf";
+
+<<<<<<< HEAD
+// We will be outputting a PDF
+header('Content-Type: application/pdf');
+
+// It will be called Delft.pdf
+=======
+// We will be outputting a PDF File
+header('Content-Type: application/pdf');
+
+// Our File will be called Delft.pdf
+>>>>>>> 27bd68bca056b15c13a23b9599150a82d933fe44
+header('Content-Disposition: attachment; filename="Delft.pdf"');
+
+$imagpdf = file_put_contents($image, file_get_contents($file));
+
+echo $imagepdf;
+?>
